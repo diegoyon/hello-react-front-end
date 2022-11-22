@@ -15,7 +15,9 @@ const Greeting = () => {
     <>
       <h1>Random Greeting:</h1>
       <p>{content}</p>
-      <button onClick={() => dispatch(fetchGreeting())}>generate new</button>
+      <button type="button" onClick={() => dispatch(fetchGreeting())}>
+        generate new
+      </button>
     </>
   );
 };

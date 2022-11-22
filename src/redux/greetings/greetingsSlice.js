@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -8,7 +10,7 @@ export const fetchGreeting = createAsyncThunk(
   async () => {
     const response = await axios.get(GREETINGS_URL);
     return response.data;
-  }
+  },
 );
 
 const initialState = {
