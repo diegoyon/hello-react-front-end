@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Greeting from './components/Greeting';
+
 function App() {
   return (
-    <div className="App">
-      <p>hello world!</p>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Greeting />} />
+      </Routes>
+    </Router>
   );
 }
 
