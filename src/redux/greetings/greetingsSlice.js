@@ -10,7 +10,7 @@ export const fetchGreeting = createAsyncThunk(
   async () => {
     const response = await axios.get(GREETINGS_URL);
     return response.data;
-  },
+  }
 );
 
 const initialState = {
@@ -29,9 +29,5 @@ export const greetingsSlice = createSlice({
     });
   },
 });
-
-// Action creators are generated for each case reducer function
-// export const { increment, decrement, incrementByAmount } =
-//   greetingsSlice.actions;
 
 export default greetingsSlice.reducer;
